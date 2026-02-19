@@ -2,11 +2,11 @@ export default function SchemaMarkup() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "City Centre Firm",
+    name: "City Centre Firm Corp.",
     url: "https://citycentrefirm.com",
-    logo: "https://citycentrefirm.com/images/og-image.jpg",
+    logo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop,f=png/YbNBolLk6QCQ5kqr/img_6743_monlogo-AzGN3RWDpwTxG7ye.jpg",
     description:
-      "Premium digital agency specializing in website design, digital strategy, and AI automation.",
+      "Premium engineering services company specializing in civil & structural engineering, project management, and technology integration.",
     email: "hr@citycentrefirm.com",
     sameAs: [],
     contactPoint: {
@@ -21,36 +21,43 @@ export default function SchemaMarkup() {
       maxValue: 50,
     },
     knowsAbout: [
-      "Web Design",
-      "Digital Strategy",
-      "AI Automation",
-      "UI/UX Design",
-      "Digital Marketing",
+      "Civil Engineering",
+      "Structural Engineering",
+      "Project Management",
+      "Technology Integration",
+      "AI Solutions",
     ],
   };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "City Centre Firm",
+    name: "City Centre Firm Corp.",
     url: "https://citycentrefirm.com",
     email: "hr@citycentrefirm.com",
     description:
-      "Premium digital agency specializing in website design, digital strategy, and AI automation.",
+      "Premium engineering services company specializing in civil & structural engineering, project management, and technology integration.",
     priceRange: "$$$$",
-    image: "https://citycentrefirm.com/images/og-image.jpg",
+    image:
+      "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop,f=png/YbNBolLk6QCQ5kqr/img_6743_monlogo-AzGN3RWDpwTxG7ye.jpg",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Mississauga",
+      addressRegion: "ON",
+      addressCountry: "CA",
+    },
   };
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "City Centre Firm",
+    name: "City Centre Firm Corp.",
     url: "https://citycentrefirm.com",
     description:
-      "Premium digital agency specializing in website design, digital strategy, and AI automation.",
+      "Premium engineering services company specializing in civil & structural engineering, project management, and technology integration.",
     publisher: {
       "@type": "Organization",
-      name: "City Centre Firm",
+      name: "City Centre Firm Corp.",
     },
   };
 

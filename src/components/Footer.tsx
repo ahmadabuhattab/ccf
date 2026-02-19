@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   { href: "/", label: "Home" },
@@ -14,16 +15,21 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
-                <span className="text-sm font-black text-white">CCF</span>
-              </div>
+              <Image
+                src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop,f=png/YbNBolLk6QCQ5kqr/img_6743_monlogo-AzGN3RWDpwTxG7ye.jpg"
+                alt="City Centre Firm Corp. logo"
+                width={36}
+                height={36}
+                className="h-9 w-9 rounded-lg object-cover"
+              />
               <span className="text-lg font-bold text-white">
-                City Centre Firm
+                City Centre Firm Corp.
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-white/40">
-              Premium digital agency specializing in website design, digital
-              strategy, and AI automation. Elevating brands worldwide.
+              Premium engineering services firm specializing in civil &amp;
+              structural engineering, project management, and technology
+              integration.
             </p>
           </div>
 

@@ -5,61 +5,61 @@ import AnimatedSection from "@/components/AnimatedSection";
 export const metadata: Metadata = {
   title: "Careers – Join Our Team",
   description:
-    "Join City Centre Firm and build the future of digital. Explore open positions in web development, digital marketing, AI solutions, and UI/UX design.",
+    "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in civil engineering, project management, AI solutions, and design.",
   openGraph: {
-    title: "Careers – Join Our Team | City Centre Firm",
+    title: "Careers – Join Our Team | City Centre Firm Corp.",
     description:
-      "Join City Centre Firm and build the future of digital. Explore open positions in web development, digital marketing, AI solutions, and UI/UX design.",
+      "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in civil engineering, project management, AI solutions, and design.",
     url: "https://citycentrefirm.com/careers",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Careers at City Centre Firm",
+        alt: "Careers at City Centre Firm Corp.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers – Join Our Team | City Centre Firm",
+    title: "Careers – Join Our Team | City Centre Firm Corp.",
     description:
-      "Join City Centre Firm and build the future of digital. Explore open positions.",
+      "Join City Centre Firm Corp. and build the future of engineering. Explore open positions.",
   },
 };
 
 const positions = [
   {
-    title: "Web Developer",
+    title: "Civil Engineer",
     type: "Full-time",
-    location: "Remote / Hybrid",
+    location: "Mississauga / Hybrid",
     description:
-      "Build cutting-edge web applications using modern frameworks like Next.js, React, and TypeScript. You'll craft performant, accessible, and visually stunning digital experiences for our clients.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      "Design and oversee civil engineering projects including infrastructure, transportation, and site development. You'll work with multidisciplinary teams to deliver safe, efficient, and innovative solutions.",
+    tags: ["AutoCAD", "Civil 3D", "Site Design", "Infrastructure"],
   },
   {
-    title: "Digital Marketing Specialist",
+    title: "Project Manager",
     type: "Full-time",
-    location: "Remote / Hybrid",
+    location: "Mississauga / Hybrid",
     description:
-      "Drive data-driven marketing campaigns across search, social, and programmatic channels. You'll develop strategies that maximize ROI and accelerate growth for ambitious brands.",
-    tags: ["SEO", "PPC", "Analytics", "Content Strategy"],
+      "Lead complex engineering projects from inception to completion. You'll coordinate teams, manage budgets, ensure regulatory compliance, and drive on-time delivery for high-stakes initiatives.",
+    tags: ["PMP", "Scheduling", "Risk Management", "Stakeholders"],
   },
   {
     title: "AI Solutions Architect",
     type: "Full-time",
     location: "Remote",
     description:
-      "Design and implement AI-powered automation solutions that transform business operations. You'll work with LLMs, ML pipelines, and custom integrations to deliver intelligent systems.",
+      "Design and implement AI-powered solutions that modernize engineering workflows. You'll work with machine learning, data analytics, and automation tools to deliver intelligent systems for infrastructure projects.",
     tags: ["Python", "LLMs", "Machine Learning", "APIs"],
   },
   {
-    title: "UI/UX Designer",
+    title: "Structural Designer",
     type: "Full-time",
-    location: "Remote / Hybrid",
+    location: "Mississauga / Hybrid",
     description:
-      "Create intuitive, beautiful user interfaces and seamless user experiences. You'll conduct user research, build design systems, and collaborate closely with developers to bring visions to life.",
-    tags: ["Figma", "Design Systems", "User Research", "Prototyping"],
+      "Create structural designs for commercial, residential, and industrial buildings. You'll perform analysis, produce detailed drawings, and collaborate with architects and engineers to ensure structural integrity.",
+    tags: ["ETABS", "Revit", "Steel Design", "Concrete Design"],
   },
 ];
 
@@ -90,9 +90,9 @@ export default function CareersPage() {
               </span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/50">
-              Join a team of innovators, creators, and strategists shaping the
-              digital landscape. We&apos;re looking for exceptional talent to drive
-              the next wave of digital transformation.
+              Join a team of engineers, innovators, and strategists shaping the
+              built environment. We&apos;re looking for exceptional talent to drive
+              the next wave of engineering excellence.
             </p>
           </AnimatedSection>
         </div>
