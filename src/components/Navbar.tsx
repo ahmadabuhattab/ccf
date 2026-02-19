@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -55,12 +56,17 @@ export default function Navbar() {
         <Link
           href="/"
           className="group flex items-center gap-3 text-xl font-bold tracking-tight text-white transition-opacity hover:opacity-80"
-          aria-label="City Centre Firm – Home"
+          aria-label="City Centre Firm Corp. – Home"
         >
-          <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-accent">
-            <span className="text-sm font-black text-white">CCF</span>
-          </div>
-          <span className="hidden sm:inline">City Centre Firm</span>
+          <Image
+            src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop,f=png/YbNBolLk6QCQ5kqr/img_6743_monlogo-AzGN3RWDpwTxG7ye.jpg"
+            alt="City Centre Firm Corp. logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-lg object-cover"
+            priority
+          />
+          <span className="hidden sm:inline">City Centre Firm Corp.</span>
         </Link>
 
         {/* Desktop Nav */}

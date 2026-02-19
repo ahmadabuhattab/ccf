@@ -8,47 +8,47 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://citycentrefirm.com"),
   title: {
     default:
-      "City Centre Firm | Premium Digital Agency – Web Design, Strategy & AI",
-    template: "%s | City Centre Firm",
+      "City Centre Firm Corp. | Engineering Services – Civil, Structural & Technology",
+    template: "%s | City Centre Firm Corp.",
   },
   description:
-    "City Centre Firm is a premium digital agency specializing in website design, digital strategy, and AI automation. We elevate brands with cutting-edge technology and creative excellence.",
+    "City Centre Firm Corp. is a premium engineering services company specializing in civil & structural engineering, project management, and technology integration. Elevating infrastructure with cutting-edge solutions.",
   keywords: [
-    "digital agency",
-    "web design",
-    "AI automation",
-    "digital strategy",
-    "website development",
-    "City Centre Firm",
-    "branding",
-    "UX design",
+    "engineering services",
+    "civil engineering",
+    "structural engineering",
+    "project management",
+    "AI integration",
+    "City Centre Firm Corp",
+    "consulting",
+    "technology solutions",
   ],
-  authors: [{ name: "City Centre Firm" }],
-  creator: "City Centre Firm",
-  publisher: "City Centre Firm",
+  authors: [{ name: "City Centre Firm Corp." }],
+  creator: "City Centre Firm Corp.",
+  publisher: "City Centre Firm Corp.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://citycentrefirm.com",
-    siteName: "City Centre Firm",
+    siteName: "City Centre Firm Corp.",
     title:
-      "City Centre Firm | Premium Digital Agency – Web Design, Strategy & AI",
+      "City Centre Firm Corp. | Engineering Services – Civil, Structural & Technology",
     description:
-      "We elevate brands with cutting-edge website design, digital strategy, and AI automation.",
+      "Premium engineering services in civil & structural engineering, project management, and technology integration.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "City Centre Firm – Premium Digital Agency",
+        alt: "City Centre Firm Corp. – Engineering Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "City Centre Firm | Premium Digital Agency",
+    title: "City Centre Firm Corp. | Engineering Services",
     description:
-      "We elevate brands with cutting-edge website design, digital strategy, and AI automation.",
+      "Premium engineering services in civil & structural engineering, project management, and technology integration.",
     images: ["/images/og-image.jpg"],
   },
   robots: {

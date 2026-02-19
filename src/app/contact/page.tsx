@@ -5,26 +5,26 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us – Get in Touch",
   description:
-    "Contact City Centre Firm to discuss your next digital project. Whether it's web design, digital strategy, or AI automation, we're ready to elevate your brand.",
+    "Contact City Centre Firm Corp. to discuss your next engineering project. Whether it's civil engineering, project management, or technology integration, we're ready to elevate your project.",
   openGraph: {
-    title: "Contact Us – Get in Touch | City Centre Firm",
+    title: "Contact Us – Get in Touch | City Centre Firm Corp.",
     description:
-      "Contact City Centre Firm to discuss your next digital project. We're ready to elevate your brand.",
+      "Contact City Centre Firm Corp. to discuss your next engineering project. We're ready to deliver excellence.",
     url: "https://citycentrefirm.com/contact",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact City Centre Firm",
+        alt: "Contact City Centre Firm Corp.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Us – Get in Touch | City Centre Firm",
+    title: "Contact Us – Get in Touch | City Centre Firm Corp.",
     description:
-      "Contact City Centre Firm to discuss your next digital project.",
+      "Contact City Centre Firm Corp. to discuss your next engineering project.",
   },
 };
 
@@ -54,8 +54,8 @@ export default function ContactPage() {
               </span>
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/50">
-              Ready to elevate your digital presence? Fill out the form below and
-              our team will get back to you within 24 hours.
+              Ready to start your next engineering project? Fill out the form below
+              and our team will get back to you within 24 hours.
             </p>
           </AnimatedSection>
         </div>
@@ -70,12 +70,12 @@ export default function ContactPage() {
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl font-bold text-white">
-                    Let&apos;s create something extraordinary
+                    Let&apos;s build something extraordinary
                   </h2>
                   <p className="mt-3 text-sm leading-relaxed text-white/40">
-                    Whether you need a stunning website, a comprehensive digital
-                    strategy, or AI-powered automation, we&apos;re here to help
-                    transform your vision into reality.
+                    Whether you need civil engineering expertise, strategic
+                    project management, or AI-powered technology solutions,
+                    we&apos;re here to help bring your vision to life.
                   </p>
                 </div>
 

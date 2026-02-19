@@ -2,18 +2,17 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const services = [
   {
-    title: "Website Design",
+    title: "Civil & Structural Engineering",
     description:
-      "Bespoke digital experiences that captivate audiences and drive conversions. We craft pixel-perfect interfaces that merge aesthetics with performance.",
+      "Comprehensive civil and structural engineering solutions for commercial, residential, and industrial projects. From foundations to superstructures, we deliver designs that stand the test of time.",
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" />
       </svg>
     ),
     gradient: "from-blue-500/20 to-indigo-500/20",
@@ -21,9 +20,9 @@ const services = [
     iconColor: "text-blue-400",
   },
   {
-    title: "Digital Strategy",
+    title: "Project Management & Consulting",
     description:
-      "Data-driven strategies that position your brand for exponential growth. We analyze, plan, and execute campaigns that deliver measurable results.",
+      "Expert project management and strategic consulting that keeps complex engineering initiatives on schedule and on budget. We guide projects from concept through completion.",
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v-5.5m3.25 5.5V8.25" />
@@ -34,9 +33,9 @@ const services = [
     iconColor: "text-purple-400",
   },
   {
-    title: "AI Automation",
+    title: "Technology & AI Integration",
     description:
-      "Intelligent automation solutions that streamline operations and unlock new possibilities. We build AI-powered systems that give you a competitive edge.",
+      "Cutting-edge technology solutions and AI-powered systems that modernize engineering workflows. We integrate smart automation, data analytics, and intelligent design tools.",
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
@@ -98,7 +97,7 @@ function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/60 backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-            Premium Digital Agency
+            Engineering Services
           </div>
 
           <h1 className="text-7xl font-bold tracking-tight text-white sm:text-8xl lg:text-9xl">
@@ -106,8 +105,8 @@ function HeroSection() {
           </h1>
 
           <p className="mx-auto max-w-xl text-lg text-white/50 sm:text-xl">
-            We craft digital experiences that transform brands and drive
-            extraordinary growth.
+            Engineering excellence that transforms industries and drives
+            extraordinary results.
           </p>
 
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -169,8 +168,8 @@ function ServicesSection() {
             Our Expertise
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-white/40">
-            Three pillars of digital excellence that drive transformative results
-            for ambitious brands.
+            Three pillars of engineering excellence that drive transformative results
+            for ambitious projects.
           </p>
         </AnimatedSection>
 
@@ -210,78 +209,6 @@ function ServicesSection() {
   );
 }
 
-function TestimonialSection() {
-  return (
-    <section className="relative py-32 overflow-hidden" aria-labelledby="testimonial-heading">
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-px w-3/4 bg-gradient-to-r from-transparent via-white/5 to-transparent" />
-      </div>
-
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <AnimatedSection className="text-center mb-16">
-          <span className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary-light mb-4">
-            Testimonials
-          </span>
-          <h2 id="testimonial-heading" className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-            Client Success
-          </h2>
-        </AnimatedSection>
-
-        <AnimatedSection delay={200}>
-          <figure className="mx-auto max-w-3xl">
-            <div className="relative rounded-2xl border border-white/5 bg-surface/50 p-10 backdrop-blur-sm sm:p-14">
-              {/* Quote mark */}
-              <div className="absolute -top-4 left-10 text-6xl font-serif text-primary/30">
-                &ldquo;
-              </div>
-
-              {/* Stars */}
-              <div className="mb-6 flex gap-1" aria-label="5 out of 5 stars">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="h-5 w-5 text-yellow-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    aria-hidden="true"
-                  >
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-
-              <blockquote className="text-lg leading-relaxed text-white/70 sm:text-xl">
-                City Centre Firm transformed our online presence! Their expertise
-                in website design, digital strategy, and AI automation has helped
-                us grow tremendously. Highly recommend their services for any
-                business!
-              </blockquote>
-
-              <figcaption className="mt-8 flex items-center gap-4">
-                <div className="h-12 w-12 overflow-hidden rounded-full bg-gradient-to-br from-primary to-accent">
-                  <Image
-                    src="/images/avatar.jpg"
-                    alt="Client avatar"
-                    width={48}
-                    height={48}
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-white">
-                    Satisfied Client
-                  </p>
-                  <p className="text-xs text-white/40">Business Owner</p>
-                </div>
-              </figcaption>
-            </div>
-          </figure>
-        </AnimatedSection>
-      </div>
-    </section>
-  );
-}
-
 function SignupSection() {
   return (
     <section className="relative py-32 overflow-hidden" aria-labelledby="signup-heading">
@@ -301,8 +228,8 @@ function SignupSection() {
               Submit your information now
             </h2>
             <p className="mt-4 text-white/40">
-              Stay ahead with insights on digital strategy, AI innovation, and
-              web design trends.
+              Stay ahead with insights on engineering innovation, project
+              updates, and industry trends.
             </p>
             <form
               className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-0"
@@ -346,7 +273,6 @@ export default function HomePage() {
     <>
       <HeroSection />
       <ServicesSection />
-      <TestimonialSection />
       <SignupSection />
     </>
   );
