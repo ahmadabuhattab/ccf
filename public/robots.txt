@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://citycentrefirm.com
+
+# Sitemaps
+Sitemap: https://citycentrefirm.com/sitemap.xml
