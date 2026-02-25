@@ -7,9 +7,9 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const services = [
   {
-    title: "Civil & Structural Engineering",
+    title: "Engineering Design & Analysis",
     description:
-      "Comprehensive civil and structural engineering solutions for commercial, residential, and industrial projects. From foundations to superstructures, we deliver designs that stand the test of time.",
+      "Comprehensive engineering solutions for commercial, residential, and industrial projects. We deliver robust designs and technical analysis that meet the highest standards of quality and performance.",
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" />
@@ -22,7 +22,7 @@ const services = [
   {
     title: "Project Management & Consulting",
     description:
-      "Expert project management and strategic consulting that keeps complex engineering initiatives on schedule and on budget. We guide projects from concept through completion.",
+      "Expert project management and strategic consulting that keeps complex initiatives on schedule and on budget. We guide projects from concept through completion with precision and accountability.",
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v-5.5m3.25 5.5V8.25" />
@@ -35,7 +35,7 @@ const services = [
   {
     title: "Technology & AI Integration",
     description:
-      "Cutting-edge technology solutions and AI-powered systems that modernize engineering workflows. We integrate smart automation, data analytics, and intelligent design tools.",
+      "Cutting-edge technology solutions and AI-powered systems that modernize engineering workflows. We integrate smart automation, data analytics, and intelligent design tools to drive efficiency.",
     icon: (
       <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
