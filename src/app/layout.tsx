@@ -6,6 +6,10 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://citycentrefirm.com"),
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   title: {
     default:
       "City Centre Firm Corp. | Engineering Services & Technology Solutions",
