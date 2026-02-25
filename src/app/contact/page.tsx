@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us – Get in Touch",
   description:
-    "Contact City Centre Firm Corp. to discuss your next engineering project. Whether it's civil engineering, project management, or technology integration, we're ready to elevate your project.",
+    "Contact City Centre Firm Corp. to discuss your next engineering project. Whether it's design, project management, or technology integration, we're ready to elevate your project.",
   openGraph: {
     title: "Contact Us – Get in Touch | City Centre Firm Corp.",
     description:
@@ -73,7 +73,7 @@ export default function ContactPage() {
                     Let&apos;s build something extraordinary
                   </h2>
                   <p className="mt-3 text-sm leading-relaxed text-white/40">
-                    Whether you need civil engineering expertise, strategic
+                    Whether you need engineering expertise, strategic
                     project management, or AI-powered technology solutions,
                     we&apos;re here to help bring your vision to life.
                   </p>
