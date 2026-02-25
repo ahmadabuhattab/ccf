@@ -6,8 +6,12 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://citycentrefirm.com"),
+  manifest: "/manifest.json",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
     apple: "/apple-touch-icon.png",
   },
   title: {
