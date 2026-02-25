@@ -8,15 +8,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://citycentrefirm.com"),
   title: {
     default:
-      "City Centre Firm Corp. | Engineering Services – Civil, Structural & Technology",
+      "City Centre Firm Corp. | Engineering Services & Technology Solutions",
     template: "%s | City Centre Firm Corp.",
   },
   description:
-    "City Centre Firm Corp. is a premium engineering services company specializing in civil & structural engineering, project management, and technology integration. Elevating infrastructure with cutting-edge solutions.",
+    "City Centre Firm Corp. is a premium engineering services company specializing in design, project management, and technology integration. Elevating projects with cutting-edge solutions.",
   keywords: [
     "engineering services",
-    "civil engineering",
-    "structural engineering",
+    "engineering design",
     "project management",
     "AI integration",
     "City Centre Firm Corp",
@@ -32,15 +31,15 @@ export const metadata: Metadata = {
     url: "https://citycentrefirm.com",
     siteName: "City Centre Firm Corp.",
     title:
-      "City Centre Firm Corp. | Engineering Services – Civil, Structural & Technology",
+      "City Centre Firm Corp. | Engineering Services & Technology Solutions",
     description:
-      "Premium engineering services in civil & structural engineering, project management, and technology integration.",
+      "Premium engineering services in design, project management, and technology integration.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "City Centre Firm Corp. – Engineering Services",
+        alt: "City Centre Firm Corp. – Engineering & Technology Solutions",
       },
     ],
   },
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "City Centre Firm Corp. | Engineering Services",
     description:
-      "Premium engineering services in civil & structural engineering, project management, and technology integration.",
+      "Premium engineering services in design, project management, and technology integration.",
     images: ["/images/og-image.jpg"],
   },
   robots: {

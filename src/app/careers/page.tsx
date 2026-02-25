@@ -5,11 +5,11 @@ import AnimatedSection from "@/components/AnimatedSection";
 export const metadata: Metadata = {
   title: "Careers – Join Our Team",
   description:
-    "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in civil engineering, project management, AI solutions, and design.",
+    "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in engineering, project management, AI solutions, and design.",
   openGraph: {
     title: "Careers – Join Our Team | City Centre Firm Corp.",
     description:
-      "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in civil engineering, project management, AI solutions, and design.",
+      "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in engineering, project management, AI solutions, and design.",
     url: "https://citycentrefirm.com/careers",
     images: [
       {
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
 
 const positions = [
   {
-    title: "Civil Engineer",
+    title: "Engineering Lead",
     type: "Full-time",
     location: "Mississauga / Hybrid",
     description:
-      "Design and oversee civil engineering projects including infrastructure, transportation, and site development. You'll work with multidisciplinary teams to deliver safe, efficient, and innovative solutions.",
-    tags: ["AutoCAD", "Civil 3D", "Site Design", "Infrastructure"],
+      "Lead and oversee engineering projects across multiple sectors. You'll work with multidisciplinary teams to deliver safe, efficient, and innovative solutions from concept through to completion.",
+    tags: ["AutoCAD", "Design", "Technical Review", "Standards"],
   },
   {
     title: "Project Manager",
@@ -50,16 +50,16 @@ const positions = [
     type: "Full-time",
     location: "Remote",
     description:
-      "Design and implement AI-powered solutions that modernize engineering workflows. You'll work with machine learning, data analytics, and automation tools to deliver intelligent systems for infrastructure projects.",
+      "Design and implement AI-powered solutions that modernize engineering workflows. You'll work with machine learning, data analytics, and automation tools to deliver intelligent systems.",
     tags: ["Python", "LLMs", "Machine Learning", "APIs"],
   },
   {
-    title: "Structural Designer",
+    title: "Design Engineer",
     type: "Full-time",
     location: "Mississauga / Hybrid",
     description:
-      "Create structural designs for commercial, residential, and industrial buildings. You'll perform analysis, produce detailed drawings, and collaborate with architects and engineers to ensure structural integrity.",
-    tags: ["ETABS", "Revit", "Steel Design", "Concrete Design"],
+      "Create engineering designs for commercial, residential, and industrial projects. You'll perform analysis, produce detailed drawings, and collaborate with architects and senior engineers to ensure quality and compliance.",
+    tags: ["Revit", "BIM", "Technical Drawings", "Analysis"],
   },
 ];
 

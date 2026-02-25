@@ -27,9 +27,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-white/40">
-              Premium engineering services firm specializing in civil &amp;
-              structural engineering, project management, and technology
-              integration.
+              Premium engineering services firm specializing in
+              design, project management, and technology integration.
             </p>
           </div>
 
