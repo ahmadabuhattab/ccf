@@ -36,6 +36,7 @@ const positions = [
     description:
       "Lead and oversee engineering projects across multiple sectors. You'll work with multidisciplinary teams to deliver safe, efficient, and innovative solutions from concept through to completion.",
     tags: ["AutoCAD", "Design", "Technical Review", "Standards"],
+    closed: false,
   },
   {
     title: "Project Manager",
@@ -44,6 +45,7 @@ const positions = [
     description:
       "Lead complex engineering projects from inception to completion. You'll coordinate teams, manage budgets, ensure regulatory compliance, and drive on-time delivery for high-stakes initiatives.",
     tags: ["PMP", "Scheduling", "Risk Management", "Stakeholders"],
+    closed: false,
   },
   {
     title: "AI Solutions Architect",
@@ -52,6 +54,7 @@ const positions = [
     description:
       "Design and implement AI-powered solutions that modernize engineering workflows. You'll work with machine learning, data analytics, and automation tools to deliver intelligent systems.",
     tags: ["Python", "LLMs", "Machine Learning", "APIs"],
+    closed: true,
   },
   {
     title: "Design Engineer",
@@ -60,6 +63,7 @@ const positions = [
     description:
       "Create engineering designs for commercial, residential, and industrial projects. You'll perform analysis, produce detailed drawings, and collaborate with architects and senior engineers to ensure quality and compliance.",
     tags: ["Revit", "BIM", "Technical Drawings", "Analysis"],
+    closed: false,
   },
 ];
 
@@ -108,18 +112,26 @@ export default function CareersPage() {
           <div className="space-y-6">
             {positions.map((position, i) => (
               <AnimatedSection key={position.title} delay={i * 100}>
-                <article className="card-hover group rounded-2xl border border-white/5 bg-surface/50 p-8 backdrop-blur-sm sm:p-10">
-                  <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+                <article className={`relative overflow-hidden rounded-2xl border bg-surface/50 p-8 backdrop-blur-sm sm:p-10 ${position.closed ? "border-white/[0.03] opacity-60" : "card-hover group border-white/5"}`}>
+                  {position.closed && (
+                    <div className="absolute top-5 right-5 z-20 flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/10 px-4 py-1.5 backdrop-blur-sm">
+                      <span className="h-1.5 w-1.5 rounded-full bg-red-400" />
+                      <span className="text-xs font-semibold uppercase tracking-widest text-red-400">
+                        Position Filled
+                      </span>
+                    </div>
+                  )}
+                  <div className={`flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between ${position.closed ? "select-none" : ""}`}>
                     <div className="flex-1 space-y-4">
                       <div className="flex flex-wrap items-center gap-3">
-                        <h3 className="text-xl font-bold text-white">
+                        <h3 className={`text-xl font-bold ${position.closed ? "text-white/50" : "text-white"}`}>
                           {position.title}
                         </h3>
-                        <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary-light">
+                        <span className={`rounded-full px-3 py-1 text-xs font-medium ${position.closed ? "bg-white/5 text-white/30" : "bg-primary/10 text-primary-light"}`}>
                           {position.type}
                         </span>
                       </div>
-                      <p className="flex items-center gap-1.5 text-sm text-white/40">
+                      <p className={`flex items-center gap-1.5 text-sm ${position.closed ? "text-white/25" : "text-white/40"}`}>
                         <svg
                           className="h-4 w-4"
                           fill="none"
@@ -141,26 +153,32 @@ export default function CareersPage() {
                         </svg>
                         {position.location}
                       </p>
-                      <p className="text-sm leading-relaxed text-white/50">
+                      <p className={`text-sm leading-relaxed ${position.closed ? "text-white/30" : "text-white/50"}`}>
                         {position.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {position.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="rounded-lg border border-white/5 bg-white/5 px-3 py-1 text-xs text-white/40"
+                            className={`rounded-lg border px-3 py-1 text-xs ${position.closed ? "border-white/[0.03] bg-white/[0.02] text-white/20" : "border-white/5 bg-white/5 text-white/40"}`}
                           >
                             {tag}
                           </span>
                         ))}
                       </div>
                     </div>
-                    <Link
-                      href="/contact"
-                      className="gradient-btn shrink-0 rounded-xl px-6 py-3 text-center text-sm font-semibold text-white"
-                    >
-                      Apply Now
-                    </Link>
+                    {position.closed ? (
+                      <span className="shrink-0 rounded-xl border border-white/10 bg-white/5 px-6 py-3 text-center text-sm font-semibold text-white/30 cursor-not-allowed">
+                        Closed
+                      </span>
+                    ) : (
+                      <Link
+                        href="/contact"
+                        className="gradient-btn shrink-0 rounded-xl px-6 py-3 text-center text-sm font-semibold text-white"
+                      >
+                        Apply Now
+                      </Link>
+                    )}
                   </div>
                 </article>
               </AnimatedSection>
