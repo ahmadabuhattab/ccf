@@ -55,41 +55,35 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           href="/"
-          className="group flex items-center gap-3 text-xl font-bold tracking-tight text-white transition-opacity hover:opacity-80"
+          className="group flex items-center gap-3 text-sm font-medium tracking-tight text-white transition-opacity hover:opacity-80"
           aria-label="City Centre Firm Corp. – Home"
         >
           <Image
             src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop,f=png/YbNBolLk6QCQ5kqr/img_6743_monlogo-AzGN3RWDpwTxG7ye.jpg"
             alt="City Centre Firm Corp. logo"
-            width={40}
-            height={40}
-            className="h-10 w-10 rounded-lg object-cover"
+            width={36}
+            height={36}
+            className="h-9 w-9 rounded-md object-cover"
             priority
           />
           <span className="hidden sm:inline">City Centre Firm Corp.</span>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`relative px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-lg ${
+              className={`text-sm transition-colors ${
                 pathname === link.href
-                  ? "text-white bg-white/10"
-                  : "text-white/60 hover:text-white hover:bg-white/5"
+                  ? "text-white"
+                  : "text-white/50 hover:text-white"
               }`}
             >
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="ml-4 gradient-btn rounded-lg px-5 py-2.5 text-sm font-semibold text-white"
-          >
-            Get Started
-          </Link>
         </div>
 
         {/* Mobile Hamburger */}
@@ -118,42 +112,31 @@ export default function Navbar() {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed inset-0 z-40 bg-[#0a0a0a]/98 backdrop-blur-2xl transition-all duration-500 md:hidden ${
+          className={`fixed inset-0 z-40 bg-[#0a0a0a]/98 backdrop-blur-2xl transition-opacity duration-300 md:hidden ${
             isOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           }`}
         >
-          <div className="flex h-full flex-col items-center justify-center gap-8">
+          <div className="flex h-full flex-col items-center justify-center gap-10">
             {navLinks.map((link, i) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-4xl font-bold transition-all duration-500 ${
+                className={`text-2xl font-medium transition-all duration-300 ${
                   isOpen
                     ? "translate-y-0 opacity-100"
-                    : "translate-y-8 opacity-0"
+                    : "translate-y-4 opacity-0"
                 } ${
                   pathname === link.href
-                    ? "text-primary-light"
-                    : "text-white/70 hover:text-white"
+                    ? "text-white"
+                    : "text-white/50 hover:text-white"
                 }`}
-                style={{ transitionDelay: isOpen ? `${i * 100 + 200}ms` : "0ms" }}
+                style={{ transitionDelay: isOpen ? `${i * 60 + 100}ms` : "0ms" }}
               >
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className={`mt-4 gradient-btn rounded-xl px-8 py-4 text-lg font-semibold text-white transition-all duration-500 ${
-                isOpen
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-8 opacity-0"
-              }`}
-              style={{ transitionDelay: isOpen ? "500ms" : "0ms" }}
-            >
-              Get Started
-            </Link>
           </div>
         </div>
       </nav>

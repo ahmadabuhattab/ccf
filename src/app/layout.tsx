@@ -16,12 +16,11 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   title: {
-    default:
-      "City Centre Firm Corp. | Engineering Services & Technology Solutions",
-    template: "%s | City Centre Firm Corp.",
+    default: "City Centre Firm Corp.",
+    template: "%s — City Centre Firm Corp.",
   },
   description:
-    "City Centre Firm Corp. is a premium engineering services company specializing in design, project management, and technology integration. Elevating projects with cutting-edge solutions.",
+    "Engineering, project management, and technology integration.",
   keywords: [
     "engineering services",
     "engineering design",
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
     "AI integration",
     "City Centre Firm Corp",
     "consulting",
-    "technology solutions",
   ],
   authors: [{ name: "City Centre Firm Corp." }],
   creator: "City Centre Firm Corp.",
@@ -39,24 +37,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://citycentrefirm.com",
     siteName: "City Centre Firm Corp.",
-    title:
-      "City Centre Firm Corp. | Engineering Services & Technology Solutions",
+    title: "City Centre Firm Corp.",
     description:
-      "Premium engineering services in design, project management, and technology integration.",
+      "Engineering, project management, and technology integration.",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "City Centre Firm Corp. – Engineering & Technology Solutions",
+        alt: "City Centre Firm Corp.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "City Centre Firm Corp. | Engineering Services",
+    title: "City Centre Firm Corp.",
     description:
-      "Premium engineering services in design, project management, and technology integration.",
+      "Engineering, project management, and technology integration.",
     images: ["/images/og-image.jpg"],
   },
   robots: {

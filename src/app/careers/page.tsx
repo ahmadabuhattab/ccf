@@ -3,13 +3,11 @@ import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 
 export const metadata: Metadata = {
-  title: "Careers – Join Our Team",
-  description:
-    "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in engineering, project management, AI solutions, and design.",
+  title: "Careers",
+  description: "Open roles at City Centre Firm Corp.",
   openGraph: {
-    title: "Careers – Join Our Team | City Centre Firm Corp.",
-    description:
-      "Join City Centre Firm Corp. and build the future of engineering. Explore open positions in engineering, project management, AI solutions, and design.",
+    title: "Careers — City Centre Firm Corp.",
+    description: "Open roles at City Centre Firm Corp.",
     url: "https://citycentrefirm.com/careers",
     images: [
       {
@@ -22,9 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Careers – Join Our Team | City Centre Firm Corp.",
-    description:
-      "Join City Centre Firm Corp. and build the future of engineering. Explore open positions.",
+    title: "Careers — City Centre Firm Corp.",
+    description: "Open roles at City Centre Firm Corp.",
   },
 };
 
@@ -34,8 +31,7 @@ const positions = [
     type: "Full-time",
     location: "Mississauga / Hybrid",
     description:
-      "Lead and oversee engineering projects across multiple sectors. You'll work with multidisciplinary teams to deliver safe, efficient, and innovative solutions from concept through to completion.",
-    tags: ["AutoCAD", "Design", "Technical Review", "Standards"],
+      "Lead engineering projects across multiple sectors, working with multidisciplinary teams from concept through completion.",
     closed: false,
   },
   {
@@ -43,8 +39,7 @@ const positions = [
     type: "Full-time",
     location: "Mississauga / Hybrid",
     description:
-      "Lead complex engineering projects from inception to completion. You'll coordinate teams, manage budgets, ensure regulatory compliance, and drive on-time delivery for high-stakes initiatives.",
-    tags: ["PMP", "Scheduling", "Risk Management", "Stakeholders"],
+      "Coordinate teams, manage budgets, ensure regulatory compliance, and drive on-time delivery on complex engineering projects.",
     closed: false,
   },
   {
@@ -52,8 +47,7 @@ const positions = [
     type: "Full-time",
     location: "Remote",
     description:
-      "Design and implement AI-powered solutions that modernize engineering workflows. You'll work with machine learning, data analytics, and automation tools to deliver intelligent systems.",
-    tags: ["Python", "LLMs", "Machine Learning", "APIs"],
+      "Design and implement AI-powered systems for engineering workflows. Machine learning, data analytics, and automation.",
     closed: false,
   },
   {
@@ -61,8 +55,7 @@ const positions = [
     type: "Full-time",
     location: "Mississauga / Hybrid",
     description:
-      "Create engineering designs for commercial, residential, and industrial projects. You'll perform analysis, produce detailed drawings, and collaborate with architects and senior engineers to ensure quality and compliance.",
-    tags: ["Revit", "BIM", "Technical Drawings", "Analysis"],
+      "Produce engineering designs and technical drawings for commercial, residential, and industrial projects.",
     closed: true,
   },
 ];
@@ -70,134 +63,70 @@ const positions = [
 export default function CareersPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative overflow-hidden pt-32 pb-20" aria-labelledby="careers-heading">
-        {/* Background */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/3 left-1/4 h-96 w-96 rounded-full bg-primary/5 blur-3xl" />
-          <div className="absolute bottom-1/3 right-1/4 h-96 w-96 rounded-full bg-accent/5 blur-3xl" />
-        </div>
-
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <AnimatedSection className="text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/60 backdrop-blur-sm mb-6">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              We&apos;re Hiring
-            </span>
+      <section
+        className="relative pt-40 pb-16"
+        aria-labelledby="careers-heading"
+      >
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <AnimatedSection>
             <h1
               id="careers-heading"
-              className="text-5xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl"
+              className="text-4xl font-medium tracking-tight text-white sm:text-5xl"
             >
-              Build the Future
-              <span className="block bg-gradient-to-r from-primary-light to-accent bg-clip-text text-transparent">
-                With Us
-              </span>
+              Careers
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-white/50">
-              Join a team of engineers, innovators, and strategists shaping the
-              built environment. We&apos;re looking for exceptional talent to drive
-              the next wave of engineering excellence.
+            <p className="mt-4 text-sm text-white/40">
+              Open roles below.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* Positions */}
       <section className="relative pb-32" aria-labelledby="positions-heading">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <AnimatedSection>
-            <h2 id="positions-heading" className="sr-only">Open Positions</h2>
-          </AnimatedSection>
+          <h2 id="positions-heading" className="sr-only">
+            Open Positions
+          </h2>
 
-          <div className="space-y-6">
+          <div className="divide-y divide-white/5 border-y border-white/5">
             {positions.map((position, i) => (
-              <AnimatedSection key={position.title} delay={i * 100}>
-                <article className="card-hover group relative overflow-hidden rounded-2xl border border-white/5 bg-surface/50 p-8 backdrop-blur-sm sm:p-10">
-                  {position.closed && (
-                    <div className="absolute top-5 right-5 z-20 flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/10 px-4 py-1.5 backdrop-blur-sm">
-                      <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
-                      <span className="text-xs font-semibold uppercase tracking-widest text-red-400">
-                        Closed
+              <AnimatedSection key={position.title} delay={i * 60}>
+                <article className="flex flex-col gap-4 py-8 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="flex-1 space-y-2">
+                    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                      <h3 className="text-base font-medium text-white">
+                        {position.title}
+                      </h3>
+                      <span className="text-xs text-white/30">
+                        {position.type} · {position.location}
                       </span>
                     </div>
-                  )}
-                  <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-                    <div className="flex-1 space-y-4">
-                      <div className="flex flex-wrap items-center gap-3">
-                        <h3 className="text-xl font-bold text-white">
-                          {position.title}
-                        </h3>
-                        <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary-light">
-                          {position.type}
-                        </span>
-                      </div>
-                      <p className="flex items-center gap-1.5 text-sm text-white/40">
-                        <svg
-                          className="h-4 w-4"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                          />
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 0 1 15 0Z"
-                          />
-                        </svg>
-                        {position.location}
-                      </p>
-                      <p className="text-sm leading-relaxed text-white/50">
-                        {position.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {position.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="rounded-lg border border-white/5 bg-white/5 px-3 py-1 text-xs text-white/40"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    {position.closed ? (
-                      <span className="shrink-0 rounded-xl border border-red-500/20 bg-red-500/10 px-6 py-3 text-center text-sm font-semibold text-red-400 cursor-not-allowed">
-                        Closed
-                      </span>
-                    ) : (
-                      <Link
-                        href="/contact"
-                        className="gradient-btn shrink-0 rounded-xl px-6 py-3 text-center text-sm font-semibold text-white"
-                      >
-                        Apply Now
-                      </Link>
-                    )}
+                    <p className="max-w-2xl text-sm leading-relaxed text-white/50">
+                      {position.description}
+                    </p>
                   </div>
+                  {position.closed ? (
+                    <span className="shrink-0 text-xs uppercase tracking-wider text-white/30">
+                      Closed
+                    </span>
+                  ) : (
+                    <Link
+                      href="/contact"
+                      className="group inline-flex shrink-0 items-center gap-2 text-sm text-white/60 transition-colors hover:text-white"
+                    >
+                      Apply
+                      <span
+                        aria-hidden="true"
+                        className="transition-transform group-hover:translate-x-0.5"
+                      >
+                        →
+                      </span>
+                    </Link>
+                  )}
                 </article>
               </AnimatedSection>
             ))}
           </div>
-
-          {/* CTA */}
-          <AnimatedSection delay={500} className="mt-16 text-center">
-            <p className="text-white/40">
-              Don&apos;t see the right role?{" "}
-              <Link
-                href="/contact"
-                className="font-medium text-primary-light transition-colors hover:text-white underline underline-offset-4"
-              >
-                Reach out anyway
-              </Link>
-              . We&apos;re always looking for exceptional talent.
-            </p>
-          </AnimatedSection>
         </div>
       </section>
     </>
