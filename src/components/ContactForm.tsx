@@ -50,47 +50,41 @@ export default function ContactForm() {
   }
 
   const inputClasses =
-    "w-full rounded-xl border border-white/10 bg-white/5 px-5 py-3.5 text-sm text-white placeholder:text-white/30 focus:border-primary/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-colors";
+    "w-full border-0 border-b border-white/10 bg-transparent px-0 py-3 text-sm text-white placeholder:text-white/25 focus:border-white/40 focus:outline-none transition-colors";
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="rounded-2xl border border-white/5 bg-surface/50 p-8 backdrop-blur-sm sm:p-10"
-    >
-      <div className="space-y-6">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div>
-            <label htmlFor="name" className="mb-2 block text-sm font-medium text-white/60">
-              Name
-            </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              required
-              placeholder="Your name"
-              className={inputClasses}
-              autoComplete="name"
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="mb-2 block text-sm font-medium text-white/60">
-              Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              placeholder="you@company.com"
-              className={inputClasses}
-              autoComplete="email"
-            />
-          </div>
+    <form onSubmit={handleSubmit}>
+      <div className="space-y-8">
+        <div>
+          <label htmlFor="name" className="mb-2 block text-xs uppercase tracking-wider text-white/40">
+            Name
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            className={inputClasses}
+            autoComplete="name"
+          />
         </div>
 
         <div>
-          <label htmlFor="subject" className="mb-2 block text-sm font-medium text-white/60">
+          <label htmlFor="email" className="mb-2 block text-xs uppercase tracking-wider text-white/40">
+            Email
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            className={inputClasses}
+            autoComplete="email"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="subject" className="mb-2 block text-xs uppercase tracking-wider text-white/40">
             Subject
           </label>
           <input
@@ -98,13 +92,12 @@ export default function ContactForm() {
             name="subject"
             type="text"
             required
-            placeholder="How can we help?"
             className={inputClasses}
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="mb-2 block text-sm font-medium text-white/60">
+          <label htmlFor="message" className="mb-2 block text-xs uppercase tracking-wider text-white/40">
             Message
           </label>
           <textarea
@@ -112,7 +105,6 @@ export default function ContactForm() {
             name="message"
             required
             rows={5}
-            placeholder="Tell us about your project..."
             className={`${inputClasses} resize-none`}
           />
         </div>
@@ -120,31 +112,18 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={formState.status === "loading"}
-          className="gradient-btn w-full rounded-xl px-8 py-4 text-sm font-semibold text-white disabled:opacity-50 disabled:cursor-not-allowed"
+          className="quiet-btn inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {formState.status === "loading" ? (
-            <span className="flex items-center justify-center gap-2">
-              <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-              </svg>
-              Sending...
-            </span>
-          ) : (
-            "Send Message"
-          )}
+          {formState.status === "loading" ? "Sending…" : "Send"}
+          {formState.status !== "loading" && <span aria-hidden="true">→</span>}
         </button>
 
         {formState.status === "success" && (
-          <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/10 p-4 text-center text-sm text-emerald-400">
-            {formState.message}
-          </div>
+          <p className="text-sm text-white/60">{formState.message}</p>
         )}
 
         {formState.status === "error" && (
-          <div className="rounded-xl border border-red-500/20 bg-red-500/10 p-4 text-center text-sm text-red-400">
-            {formState.message}
-          </div>
+          <p className="text-sm text-white/60">{formState.message}</p>
         )}
       </div>
     </form>

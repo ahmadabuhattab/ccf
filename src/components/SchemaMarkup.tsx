@@ -6,7 +6,7 @@ export default function SchemaMarkup() {
     url: "https://citycentrefirm.com",
     logo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop,f=png/YbNBolLk6QCQ5kqr/img_6743_monlogo-AzGN3RWDpwTxG7ye.jpg",
     description:
-      "Premium engineering services company specializing in design, project management, and technology integration.",
+      "Engineering, project management, and technology integration.",
     email: "hr@citycentrefirm.com",
     sameAs: [],
     contactPoint: {
@@ -15,11 +15,6 @@ export default function SchemaMarkup() {
       contactType: "customer service",
     },
     foundingDate: "2024",
-    numberOfEmployees: {
-      "@type": "QuantitativeValue",
-      minValue: 10,
-      maxValue: 50,
-    },
     knowsAbout: [
       "Engineering Design",
       "Engineering Analysis",
@@ -36,8 +31,7 @@ export default function SchemaMarkup() {
     url: "https://citycentrefirm.com",
     email: "hr@citycentrefirm.com",
     description:
-      "Premium engineering services company specializing in design, project management, and technology integration.",
-    priceRange: "$$$$",
+      "Engineering, project management, and technology integration.",
     image:
       "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=375,fit=crop,f=png/YbNBolLk6QCQ5kqr/img_6743_monlogo-AzGN3RWDpwTxG7ye.jpg",
     address: {
@@ -54,7 +48,7 @@ export default function SchemaMarkup() {
     name: "City Centre Firm Corp.",
     url: "https://citycentrefirm.com",
     description:
-      "Premium engineering services company specializing in design, project management, and technology integration.",
+      "Engineering, project management, and technology integration.",
     publisher: {
       "@type": "Organization",
       name: "City Centre Firm Corp.",
